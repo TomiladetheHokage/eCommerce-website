@@ -1,0 +1,59 @@
+main{
+    padding: 0;
+}
+.hero{
+    background-color: #efefef;
+    min-height: 50vh;
+}
+.hero-content{
+    margin: 100px;
+    padding-top: 20px;
+}
+.hero-header{
+    font-size: 64px;
+    line-height: 60px;
+}
+.hero-paragraph{
+    width: 554px;
+    height: 33px;
+    font-size: 16px;
+}
+.hero-button{
+    border: 1px solid black;
+    border-radius: 15px;
+    font-size: 13px;
+    height: 52px;
+    width: 210px;
+    background-color: black;
+    color:  white;
+}
+.hero-button-container{
+    padding-top: 20px;
+}
+.test{
+    color: red;
+    padding: 0;
+    margin-bottom: 0;
+}
+.outer-hero{
+    display: flex;
+    justify-content: space-between;
+}
+.models{
+    width: auto;
+    height: 70vh;
+    /*position: absolute;*/
+    /*margin-top: -500px;*/
+    /*margin-left: 55rem;*/
+}
+/*.hero-models{*/
+/*    position: relative;*/
+/*}*/
+.brand-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.brand{
+    color: white;
+}

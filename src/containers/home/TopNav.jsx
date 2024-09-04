@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Input from '../../components/Input';
+import Input from '../../components/searchBar';
 import SearchIcon from '../../assets/images/SearchIcon.png';
 import CartIcon from '../../assets/images/CartIcon.png';
 import DropdownIcon from '../../assets/images/DropdownIcon.png';
@@ -14,12 +14,12 @@ const TopNav = () => {
         setSearchValue(e.target.value);
     }
 
-    console.log("searchValue 2 --> ", searchValue);
     
   return (
     <div className='topnav_container'>
         <p className='topnav_logo'>{searchValue}</p>
         <ul className='topnav_List'>
+            <li className='Logo'>SEYI.FAB</li>
             <li className='List_items'>
                 <span>Shop</span>
                 <img src={DropdownIcon} alt="DropdownIcon" />

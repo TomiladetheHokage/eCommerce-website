@@ -5,22 +5,23 @@
     justify-content: space-between;
 }
 
-.topnav_logo{
-    width: 10%;
-    font-weight: 800;
+.Logo{
+    list-style: none;
+    margin-right: auto;
+    font-weight: bold;
     font-size: 30px;
-    margin-left: 20px;
-    text-align: center;
+
 }
 
 .topnav_List{
-    width: 35%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
 
 .List_items{
     list-style: none;
+    padding-left: 20px;
 }
 
 .topnav_input{

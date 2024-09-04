@@ -1,7 +1,7 @@
 import React from "react";
-import './style/Input.css';
+import './style/searchBar.css';
 
-function Input(props) {
+function searchBar(props) {
   return (
     <div className="input_container">
       <img className="input_image" src={props.image} alt="SearchIcon" />
@@ -16,4 +16,4 @@ function Input(props) {
   );
 }
 
-export default Input;
+export default searchBar;
