@@ -1,7 +1,22 @@
 import './style/TopSelling.css'
 import tankTop from '../../assets/images/Screenshot_2024-09-03_230942-removebg-preview.png'
 import Card from "./Card";
+import {useEffect, useState} from "react";
 const TopSelling = () => {
+
+
+
+    const [products, setProducts] = useState([]);
+
+    useEffect(() => {
+        fetch('https://api.escuelajs.co/api/v1/products')
+            .then(res => res.json())
+            .then(data => {
+                setProducts(data);
+            })
+            .catch(error => console.log(error));
+    }, []);
+
     return(
         <div className="top-selling-section">
             <h1 className='headere'>
@@ -9,8 +24,14 @@ const TopSelling = () => {
             </h1>
 
             <div className='items'>
-
-                <Card/>
+                {products.slice(0,4).map((product) => (
+                    <Card
+                    image={product.image}
+                    title={product.title}
+                    rating={product.rating}
+                    price={product.price}
+                    />
+                ))}
 
                 <div className='item'>
                     <div className='image-container'>
@@ -21,8 +42,7 @@ const TopSelling = () => {
                     <p>$20</p>
                 </div>
 
-                <Card/>
-                <Card/>
+
             </div>
 
             <div className='button-container'>

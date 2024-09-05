@@ -1,5 +1,4 @@
-import mockUp from "../../assets/images/Screenshot_2024-09-03_184700-removebg-preview.png";
-import React, {useState, useEffect} from "react";
+
 
 const Card = ({image, title, rating, price, description}) => {
     return (
@@ -10,7 +9,7 @@ const Card = ({image, title, rating, price, description}) => {
                 </div>
                 <p>{title}</p>
                 <div className="stars">{rating}</div>
-                <p>{price}</p>
+                <p>#{price}</p>
                 <p>{description}</p>
             </div>
         </div>
