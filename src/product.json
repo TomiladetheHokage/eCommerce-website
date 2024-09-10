@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "image": "https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945332/samples/man-portrait.jpg",
+    "title": "Purple Swweatshirt",
+    "price": "#7,900"
+  },
+  {
+    "id": "2",
+    "image": "https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945324/samples/people/boy-snow-hoodie.jpg",
+    "title": "Blue Hoodie",
+    "price": "#9,900"
+  },
+  {
+    "id": "3",
+    "image": "https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945333/cld-sample.jpg",
+    "title": "Pink Sweater",
+    "price": "#10,500"
+  },
+  {
+    "id": "4",
+    "image": "https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945333/cld-sample-5.jpg",
+    "title": "Shoe",
+    "price": "#19,900"
+  }
+]

@@ -1,43 +1,46 @@
-import './style/Newarrival.css'
+import styles from './style/Newarrival.module.css'
 import Card from "./Card";
-import mockUp from '../../assets/images/Screenshot_2024-09-03_184700-removebg-preview.png'
 import {useState, useEffect} from "react";
-
+import NoAvailableProducts from '../../components/NoAvailableProducts'
+import ViewAllButton from "../../components/ViewAllButton";
 
 
 const NewArrival = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('https://api.escuelajs.co/api/v1/products')
+        fetch('https://dummyjson.com/products/category/mens-shirts')
         .then(res => res.json())
         .then(data => {
-            setProducts(data);
+            console.log(data)
+            setProducts(data.products);
         })
+
             .catch(error => console.log(error));
     }, []);
 
+
     return (
-        <div className='New-arrival-section'>
-            <h1 className='header'>New Arrivals</h1>
+        <div className={styles['New-arrival-section']}>
+            <h1 className={styles['header']}>New Arrivals</h1>
 
-            <div className='items'>
-                {products.slice(0, 4).map((product) => (
-                    <Card
-                        image={product.image}
-                        title={product.title}
-                        rating={product.rating}
-                        price={product.price}
-                        // description={product.description}
-                    />
-                ))}
+            <div className={styles['items']}>
+                {products.length > 0 ? (
+                    products.slice(0, 4).map((product) => (
+                        <Card
+                            image={product.images[0]}
+                            title={product.title}
+                            price={product.price}
+                            description={product.description}
+                        />
+                    ))
+                ) : (
+                   <NoAvailableProducts/>
+                )}
             </div>
 
-            <div className='button-container'>
-                <button className='view-all-button'>
-                    VIEW ALL
-                </button>
-            </div>
+            <ViewAllButton disabled={products.length === 0}/>
+
         </div>
     )
 }

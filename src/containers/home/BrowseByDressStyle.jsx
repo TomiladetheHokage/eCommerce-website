@@ -13,22 +13,22 @@ const browseByDressStyle = () => {
                 <div className='style-card'>
                     <CasualCard
                         title='Casual'
-                        image={maleModel}
+                        image={'https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945332/samples/outdoor-woman.jpg'}
                     />
                     <FormalCard
                         title='Formal'
-                        image={formal}
+                        image={'https://res.cloudinary.com/dvtbqpr8v/video/upload/v1722945327/samples/cld-sample-video.mp4'}
                     />
                 </div>
 
                 <div className='style-card'>
                     <FormalCard
                         title='Party'
-                        image={formal}
+                        image={'https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945324/samples/people/jazz.jpg'}
                     />
                     <CasualCard
                         title='Gym'
-                        image={maleModel}
+                        image={'https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945333/cld-sample-3.jpg'}
                     />
                 </div>
 
