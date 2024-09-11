@@ -1,9 +1,11 @@
 import './style/BrowseByDressStyle.css'
 import CasualCard from "../../components/CasualCard";
 import FormalCard from "../../components/FormalCard";
-import mock from '../../assets/images/Layer 1.png'
 import maleModel from '../../assets/images/Screenshot_2024-09-04_132913-removebg-preview.png'
-import formal from '../../assets/images/Layer 1.png'
+import formal from '../../assets/images/Screenshot_2024-09-11_063844-removebg-preview.png'
+import party from '../../assets/images/Screenshot_2024-09-11_064230-removebg-preview.png'
+import gym from '../../assets/images/Screenshot_2024-09-11_064726-removebg-preview.png'
+
 const browseByDressStyle = () => {
     return(
         <div>
@@ -13,22 +15,22 @@ const browseByDressStyle = () => {
                 <div className='style-card'>
                     <CasualCard
                         title='Casual'
-                        image={'https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945332/samples/outdoor-woman.jpg'}
+                        image={maleModel}
                     />
                     <FormalCard
                         title='Formal'
-                        image={'https://res.cloudinary.com/dvtbqpr8v/video/upload/v1722945327/samples/cld-sample-video.mp4'}
+                        image={formal}
                     />
                 </div>
 
                 <div className='style-card'>
                     <FormalCard
                         title='Party'
-                        image={'https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945324/samples/people/jazz.jpg'}
+                        image={party}
                     />
                     <CasualCard
                         title='Gym'
-                        image={'https://res.cloudinary.com/dvtbqpr8v/image/upload/v1722945333/cld-sample-3.jpg'}
+                        image={gym}
                     />
                 </div>
 
