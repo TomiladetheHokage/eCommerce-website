@@ -1,4 +1,4 @@
-import mock from "../../assets/images/Layer 1.png";
+import mock from "../assets/images/Layer 1.png";
 
 const FormalCard = ({title, image}) => {
     return (

@@ -1,4 +1,4 @@
-import maleModel from "../../assets/images/Screenshot_2024-09-04_132913-removebg-preview.png";
+import maleModel from "../assets/images/Screenshot_2024-09-04_132913-removebg-preview.png";
 
 const CasualCard = ({title, image}) => {
     return (

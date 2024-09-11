@@ -1,4 +1,4 @@
-import styles from '../home/style/Newarrival.module.css'
+import styles from '../containers/home/style/Newarrival.module.css'
 import { useState } from "react";
 
 const Card = ({ image, title, rating, price, description }) => {

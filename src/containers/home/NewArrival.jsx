@@ -1,5 +1,5 @@
 import styles from './style/Newarrival.module.css'
-import Card from "./Card";
+import Card from "../../components/Card";
 import {useState, useEffect} from "react";
 import NoAvailableProducts from '../../components/NoAvailableProducts'
 import ViewAllButton from "../../components/ViewAllButton";

@@ -1,6 +1,6 @@
 import './style/BrowseByDressStyle.css'
-import CasualCard from "./CasualCard";
-import FormalCard from "./FormalCard";
+import CasualCard from "../../components/CasualCard";
+import FormalCard from "../../components/FormalCard";
 import mock from '../../assets/images/Layer 1.png'
 import maleModel from '../../assets/images/Screenshot_2024-09-04_132913-removebg-preview.png'
 import formal from '../../assets/images/Layer 1.png'

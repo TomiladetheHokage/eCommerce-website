@@ -30,7 +30,8 @@
     object-fit: cover
 }
 .image-container{
-    background-color: #e4e4e4;
+    /*background-color: #e4e4e4;*/
+    background-color: white;
     border-radius: 10px;
     width: 220px;
     padding: 10px;
