@@ -33,8 +33,6 @@ const browseByDressStyle = () => {
                         image={gym}
                     />
                 </div>
-
-
             </div>
 
         </div>
