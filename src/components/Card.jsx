@@ -4,7 +4,7 @@ import { useState } from "react";
 const Card = ({ image, title, rating, price, description }) => {
     const [showFullDescription, setShowFullDescription] = useState(false);
 
-    // Ensure `description` is defined before applying `substring`
+
     let descriptionOfProduct = showFullDescription ? description || "" : (description ? description.substring(0, 50) + "..." : "");
 
     return (
@@ -14,7 +14,6 @@ const Card = ({ image, title, rating, price, description }) => {
                     <img className={styles['mockup']} src={image} alt={title} />
                 </div>
                 <p>{title}</p>
-                <div className="stars">{rating}</div>
                 <p>#{price}</p>
                 <div className={styles['description-container']}>
                     <p className={styles['description']}>{descriptionOfProduct}</p>

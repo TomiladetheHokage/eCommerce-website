@@ -4,6 +4,7 @@ import Hero from './Hero';
 import NewArrival from "./NewArrival";
 import TopSelling from "./TopSelling";
 import BrowseByDressStyle from "./BrowseByDressStyle";
+import Reviews from "./Reviews";
 
 function Main(){
     return(
@@ -13,7 +14,7 @@ function Main(){
             <NewArrival/>
             <TopSelling/>
             <BrowseByDressStyle/>
-
+            <Reviews/>
         </div>
     )
 }

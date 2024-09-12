@@ -17,6 +17,7 @@ const browseByDressStyle = () => {
                         title='Casual'
                         image={maleModel}
                     />
+
                     <FormalCard
                         title='Formal'
                         image={formal}
